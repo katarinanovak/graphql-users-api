@@ -54,7 +54,7 @@ text
 
 2. **Instaliraj dependency-je**
 
- ```bash
+    ```bash
     yarn install
 
 3. **Kreiraj .env fajl u root folderu**
@@ -64,7 +64,7 @@ PORT=4000
 
 4. **Pokreni server**
 
-```bash
+    ```bash
 
     yarn node index.js
 
