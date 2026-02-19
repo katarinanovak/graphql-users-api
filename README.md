@@ -20,20 +20,20 @@ API omogućava:
 - **Yarn** - package manager
 
 ## 📁 Struktura projekta
-graphql-users-api/
-├── config/
-│ └── db.js # MongoDB konekcija
-├── models/
-│ └── User.js # MongoDB model za korisnika
-├── schema/
-│ ├── typeDefs.js # GraphQL šema
-│ └── resolvers.js # Resolveri (logika)
-├── .env # Environment varijable
-├── index.js # Glavni server fajl
-├── package.json
-├── yarn.lock
-├── queries.graphql # Spremljeni GraphQL upiti
-└── README.md
+    graphql-users-api/
+    ├── config/
+    │ └── db.js # MongoDB konekcija
+    ├── models/
+    │ └── User.js # MongoDB model za korisnika
+    ├── schema/
+    │ ├── typeDefs.js # GraphQL šema
+    │ └── resolvers.js # Resolveri (logika)
+    ├── .env # Environment varijable
+    ├── index.js # Glavni server fajl
+    ├── package.json
+    ├── yarn.lock
+    ├── queries.graphql # Spremljeni GraphQL upiti
+    └── README.md
 
 text
 
