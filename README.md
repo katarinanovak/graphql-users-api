@@ -130,6 +130,7 @@ mutation {
 }
 
 Dodatne funkcionalnosti
+
 ✅ Validacija email formata pri registraciji
 
 ✅ Jedinstvena email adresa (ne mogu dva ista email-a)
