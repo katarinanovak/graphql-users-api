@@ -52,27 +52,25 @@ text
    git clone https://github.com/katarinanovak/graphql-users-api.git
    cd graphql-users-api
 
-Instaliraj dependency-je
+2. **Instaliraj dependency-je**
 
-bash
-yarn install
+ ```bash
+    yarn install
 
-Kreiraj .env fajl u root folderu
-
-text
+3. **Kreiraj .env fajl u root folderu**
 
 MONGO_URI=mongodb://127.0.0.1:27017/users-api
 PORT=4000
 
-Pokreni server
+4. **Pokreni server**
 
-bash
+```bash
 
-yarn node index.js
+    yarn node index.js
 
-Otvori GraphQL playground
+5. **Otvori GraphQL playground**
 
-text
+
 
 http://localhost:4000/graphql
 
