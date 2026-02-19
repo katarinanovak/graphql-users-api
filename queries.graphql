@@ -1,0 +1,34 @@
+
+
+# Dohvatanje svih korisnika
+query GetAllUsers {
+  users {
+    id
+    name
+    email
+    createdAt
+  }
+}
+
+# Dohvatanje sa filterom
+query FilterUsersByName($name: String) {
+  users(filter: { name: $name }) {
+    id
+    name
+    email
+  }
+}
+
+# Dodavanje korisnika
+mutation AddUser($name: String!, $email: String!) {
+  addUser(name: $name, email: $email) {
+    id
+    name
+    email
+  }
+}
+
+# Brisanje korisnika
+mutation DeleteUser($id: ID!) {
+  deleteUser(id: $id)
+}
