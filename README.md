@@ -51,27 +51,36 @@ text
    ```bash
    git clone https://github.com/katarinanovak/graphql-users-api.git
    cd graphql-users-api
+
 Instaliraj dependency-je
 
 bash
 yarn install
+
 Kreiraj .env fajl u root folderu
 
 text
+
 MONGO_URI=mongodb://127.0.0.1:27017/users-api
 PORT=4000
+
 Pokreni server
 
 bash
+
 yarn node index.js
+
 Otvori GraphQL playground
 
 text
+
 http://localhost:4000/graphql
 
 
 🔍 Korišćenje API-ja
+
 Dohvatanje svih korisnika
+
 graphql
 query {
   users {
@@ -83,6 +92,7 @@ query {
 }
 
 Dodavanje novog korisnika
+
 graphql
 mutation {
   addUser(name: "Pera Peric", email: "pera@email.com") {
@@ -93,6 +103,7 @@ mutation {
 }
 
 Filter po imenu
+
 graphql
 query {
   users(filter: { name: "Pera" }) {
@@ -103,6 +114,7 @@ query {
 }
 
 Filter po emailu
+
 graphql
 query {
   users(filter: { email: "pera@email.com" }) {
@@ -113,6 +125,7 @@ query {
 }
 
 Dohvatanje jednog korisnika po ID
+
 graphql
 query {
   user(id: "ID_KORISNIKA") {
@@ -124,6 +137,7 @@ query {
 }
 
 Brisanje korisnika
+
 graphql
 mutation {
   deleteUser(id: "ID_KORISNIKA")
